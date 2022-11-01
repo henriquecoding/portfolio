@@ -3,28 +3,30 @@
 
 /* Menu de Navegação */
 
-header {
+.header {
     position: sticky;
     top: 0;
     background-color: rgba(37, 48, 49, 0.9);
     z-index: 10;
 }
 
-.nav-menu {
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    max-width: 1200px;
-    justify-content: center;
-    align-items: center;
-    height: 55px;
-    margin: auto; 
+.menu-toggle {
+    display: none;
 }
 
 .menu {
     display: flex;
     flex-direction: row;
+    width: 90%;
+    max-width: 980px;
+    justify-content: center;
     align-items: center;
+    margin: auto; 
+}
+
+.menu-item {
+    align-self: center;
+    padding: 12px;
 }
 
 .menu-link {
@@ -33,7 +35,6 @@ header {
     color: #f0f8ff;
     margin: 0 25px;
     transition: .4s ease;
-    height: 55px;
 }
 
 .menu-link:hover {
@@ -156,22 +157,27 @@ body {
 /* Apresentação */
 
 .presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-image: linear-gradient(160deg, #c6e0ff 40%, #bcab79 100%);
     background-repeat: no-repeat;
+    height: 100%;
+    padding: 15px 0;
 }
 
-#presentation {
+.presentation-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     margin: 0 auto;
     width: 90%;
-    max-width: 1200px; 
-    height: 570px;
+    max-width: 980px;
 }
 
-.presentation-container {
+.presentation-content {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -182,7 +188,7 @@ body {
 }
 
 .profilePicture {
-    width: 300px;
+    width: 320px;
     box-shadow: 2px 2px 5px #253031;
     border-radius: 5px 0 0 5px;
 }
@@ -190,7 +196,7 @@ body {
 .socialMedia {
     position: absolute;
     text-align: center;
-    width: 300px;
+    width: 320px;
     bottom: 15px;
 }
 
@@ -209,9 +215,9 @@ body {
 .presentation-about {
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
-    width: 410px;
-    height: 420px;
+    padding-left: 40px;
+    width: 450px;
+    height: 450px;
     align-self: flex-start;
     background-color: rgba(240, 248, 255, 0.7);
     border-radius: 0 5px 5px 0;
@@ -221,7 +227,7 @@ body {
     font: 700 2rem 'Ubuntu', sans-serif;
     text-indent: 25px;
     color: #2978a0;
-    margin: 20px 0 15px 0;
+    margin: 30px 0 15px 0;
 }
 
 .emphasis {
@@ -230,7 +236,7 @@ body {
 }
 
 .about-me p {
-    font: 500 1rem 'Lora', serif;
+    font: 500 1.05rem 'Lora', serif;
     text-indent: 25px;
     color: #253031;
     width: 400px;
@@ -270,16 +276,17 @@ body {
     cursor: pointer;
 }
 
-.meCreative {
-    width: 400px;
+.slide-txt {
+    font: 500 1rem 'Lora', serif;
+    font-style: italic;
+    color: #253031;
 }
 
 /* Animação svg */
 
 svg {
+    margin-top: 15px;
     width: 60px; 
-    position: absolute;
-    top: 560px;
 }
 
 .mouseBody {
@@ -307,6 +314,7 @@ svg {
 .last-conquest {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #stamp {
@@ -321,7 +329,7 @@ svg {
     justify-content: center;
     gap: 15px;
     width: 90%;
-    max-width: 1200px;
+    max-width: 980px;
     margin: 40px 0 15px 0;
 }
 
@@ -344,13 +352,15 @@ svg {
 }
 
 .last-conquest p {
-    align-self: center;
+    text-align: center;
     font: 500 1.2rem 'Lora', serif;
+    width: 90%;
+    max-width: 980px;
     font-style: italic;
     color: #253031;
 }
 
-#conquests-modal {
+.conquests-modal {
     border: none;
     border-radius: .5rem;
     box-shadow: 0 0 1em rgba(37, 48, 49, 0.3);
@@ -358,7 +368,7 @@ svg {
     height: 350px;
 }
 
-#conquests-modal::backdrop {
+.conquests-modal::backdrop {
     background-color: rgba(37, 48, 49, 0.5);
 }
 
@@ -474,12 +484,12 @@ svg {
     display: flex;
     flex-direction: column;
     width: 90%;
-    max-width: 1200px; 
+    max-width: 980px;
     height: 2050px;
 }
 
 .resume hr {
-    width: 700px;
+    width: 70%;
     margin-top: 50px;
     height: 1px;
     border-radius: 5px;
@@ -495,87 +505,19 @@ svg {
 /* Seção de formação e Habilidades */
 
 .skills {
-    display: grid;
-    grid-template-areas: "content sideContent"
-                         "content2 sideContent"
-                         "content3 sideContent"
-    ;
+    display: flex;
+    flex-direction: column;
     justify-content: center; 
-}
-
-/* Menu Lateral */
-
-.sideContent {
-    grid-area: sideContent;
-    display: flex;
-    flex-direction: column;
-    font: 900 1rem 'Ubuntu', sans-serif;
-    position: sticky;
-    top: 100px;
-    width: 250px;
-    height: 400px;
-    margin: 50px 0 0 30px;
-    background-color: #2978a0;
-    border-radius: 5px;
-    border: 2px solid #253031;
-    box-shadow: 1px 1px 5px #253031;
-}
-
-.sideContent img {
-    width: 250px;
-    border-radius: 5px 5px 0 0;
-    box-shadow: 0 2px 3px #253031;
-}
-
-.sideContent-title {
-    font: bolder 1.2rem 'Ubuntu', sans-serif;
-    text-align: center;
-    text-shadow: .5px .5px .5px #253031;
-    color: #f0f8ff; 
-    margin: 10px;
-}
-
-.sideContent-social {
-    display: flex;
-    justify-content: center;
-    text-shadow: .5px .5px .5px #253031;
-}
-
-.sideContent-social a {
-    text-decoration: none;
-    color: #bcab79;
-    font-size: 30px;
-    padding: 0 7px;
-    transition: all .5s ease;
-}
-
-.sideContent-social a:hover {
-    color: #c6e0ff;
-}
-
-.sideContent-contacts {
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-    color: #bcab79;
-    text-shadow: .5px .5px .5px #253031;
-}
-
-.sideContent h3 {
-    padding: 8px 0;
 }
 
 /* Ferramentas */
 
-.tools {
-    grid-area: content;
-}
-
 .projects {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 20px;
     justify-content: center;
+    align-items: center;
 }
 
 .project {
@@ -633,10 +575,10 @@ svg {
     display: flex;
     flex-direction: column;
     align-self: center;
-    width: 850px;
+    width: 90%;
+    max-width: 980px;
     gap: 15px;
     position: relative;
-    grid-area: content2;
 }
 
 .formations {
@@ -727,7 +669,8 @@ svg {
     display: flex;
     flex-direction: column;
     align-self: center;
-    grid-area: content3;
+    width: 90%;
+    max-width: 980px;
     height: 500px;
 }
 
@@ -747,9 +690,9 @@ svg {
 }
 
 .slider-value {
-    left: 50%;
+    left: 20%;
     position: relative;
-    width: 100%;
+    width: 40%;
 }
 
 .slider-value span {
@@ -857,15 +800,14 @@ svg {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 420px;
     padding: 7px;
-
+    width: 100%;
 }
 
 .entity-work {
     color: #253031;
     font: 700 1.2rem 'Ubuntu', sans-serif;
-    margin-bottom: 5px;
+    margin-bottom: 5px ;
 }
 
 .entityWork-title {
@@ -876,8 +818,7 @@ svg {
 
 .entity-details {
     font: 500 1rem 'Lora', serif;
-    margin: 7px 0;
-    width: 320px;
+    padding: 7px;
 }
 
 .meet-entity {
@@ -900,7 +841,7 @@ footer {
     display: flex;
     flex-direction: row;
     width: 90%;
-    max-width: 1200px;
+    max-width: 980px;
     justify-content: center;
     align-items: center;
     height: 80px;
@@ -951,22 +892,237 @@ body::-webkit-scrollbar-corner {
     background-color: #253031;
 }
 
-@media screen and (max-width: 1024px) {
-    .megaMenu {
-        justify-content: start;
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 80%;
+    }
+
+    /* Navbar */
+
+    .header {
+        position: absolute;
+        height: 55px;
+        background-color: #25303100;
+        right: 25px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .menu-toggle i {
+        font-size: 2.5rem;
+        padding: 20px;
+        color: #253031;
+    }
+
+    .header.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100vw;
+        height: 100vh;
+        z-index: 10;
+        background-color: #253031;
+    }
+
+    .header.on .menu-toggle {
+        position: absolute;
+        top: 0;
+        right: 25px;
+    }
+
+    .header.on .menu-toggle i {
+        font-size: 2.5rem;
+        color: #f0f8ff;
+    }
+
+    .header.on .menu {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .header.on .menu .menu-item{
+        padding: 10px 0;
+    }
+
+    /* Apresentação */
+
+    .presentation {
+        padding: 70px 0;
+    }
+
+    svg, .slide-txt {
+        display: none;
+    }
+
+    .profilePicture, .socialMedia {
+        width: 250px;
+    }
+
+    .presentation-about {
+        width: 410px;
+        height: 350px;
+        padding-left: 20px;
+    }
+
+    .about-me h1 {
+        font-size: 1.5rem;
+        margin: 15px 0 10px 0;
+    }
+
+    .about-details {
+        margin: 5px 0;
+    }
+
+    .about-me button {
+        margin: 10px 0;
+    }
+
+    /* Resumo */
+
+    .resume {
+        height: 2350px;
+    }
+
+    /* Ferramentas */
+
+    .projects {
         flex-wrap: wrap;
     }
-    
+
+    /* Educação */
+
+    .education {
+        width: 100%;
+    }
+
+    .formations-year, .formations-year2 {
+        width: 70px;
+    }
+
+    .formation, .formation2 {
+        width: 170px;
+    }
+
+    .verticalLine {
+        height: 580px;
+    }
 }
 
-@media screen and (max-width: 768px) {
-    .megaMenu {
+@media screen and (max-width: 425px) {
+
+    /* Apresentação */
+
+    .presentation {
+        padding: 35px 0;
+    }
+
+    .presentation-content {
+        display: flex;
         flex-direction: column;
-        position: static;
-        box-shadow: none;
-        height: 100%;
-        max-width: 350px;
-        overflow: hidden;
+   
+        align-items: center;
+    }
+
+    .presentation-photo {
+        margin: 20px 0;
+    }
+
+    .profilePicture {
+        border-radius: 5px;
+    }
+
+    .presentation-about {
+        width: 320px;
+        height: 370px;
+        border-radius: 5px;
+    }
+
+    .presentation-about p {
+        width: 300px;
+    }
+
+    /* Resumo */
+
+    .resume {
+        height: 2900px;
+    }
+
+    /* Conquistas */
+
+    .header-lastConquest {
+        font-size: 1.7rem;
+    }
+
+    #myConquests-btn {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    .conquests-modal {
+        border: none;
+        border-radius: .5rem;
+        box-shadow: 0 0 1em rgba(37, 48, 49, 0.3);
+        width: 90%;
+        height: 300px;
+    }
+
+    .conquest p {
+        width: 80%;
+        height: 100px;
+    }
+
+    #prev {
+        left: 10px;
+    }
+
+    #next {
+        right: 10px;
+    }
+
+    /* Educação */
+
+    .formations {
+        margin: 15px;
+    }
+
+    .verticalLine {
+        display: none;
+    }
+
+    .formations-year::after, .formations-year2::after {
+        content: none;
+    }
+
+    /* Experiência Profissional */
+
+    .field {
+        width: 400px;
+    }
+
+    .field .value.left {
+        display: none;
     }
     
+    .field .value.right {
+        display: none;
+    }
+
+    .value-container {
+        width: 350px;
+    }
+
+    .slider-value span {
+        font-size: 1.5rem;
+        width: 165px;
+      }
 }
