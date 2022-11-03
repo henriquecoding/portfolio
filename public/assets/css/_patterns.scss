@@ -1,0 +1,45 @@
+// Cores
+
+$white: #f0f8ff;
+$black: #253031;
+$extra-dark-blue: #315659;
+$dark-blue: #2978a0;
+$blue: #c6e0ff;
+$brown: #bcab79;
+
+// Animations
+
+$fade-duration: 1s;
+$columns-transition-delay: 0.2s;
+
+.animate-before {
+  transform: translateY(40px);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.animate-after {
+  transform: translateY(-40px);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Barra de Rolagem | Scrollbar */
+
+body::-webkit-scrollbar {
+  width: 12px;               
+}
+
+body::-webkit-scrollbar-track {
+  background: #253031;       
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #c6e0ff;    
+  border-radius: 20px;       
+  border: 3px solid #253031;  
+}
+
+body::-webkit-scrollbar-corner {
+  background-color: #253031;
+}
