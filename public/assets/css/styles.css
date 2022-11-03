@@ -3,11 +3,11 @@
 
 /* Menu de Navegação */
 
-.header {
+header {
     position: sticky;
     top: 0;
-    background-color: rgba(37, 48, 49, 0.9);
     z-index: 10;
+    background-color: rgba(37, 48, 49, 0.9);
 }
 
 .menu-toggle {
@@ -163,7 +163,6 @@ body {
     justify-content: center;
     background-image: linear-gradient(160deg, #c6e0ff 40%, #bcab79 100%);
     background-repeat: no-repeat;
-    height: 100%;
     padding: 15px 0;
 }
 
@@ -899,13 +898,18 @@ body::-webkit-scrollbar-corner {
 
     /* Navbar */
 
+    header {
+        position: absolute;
+        right: 0;
+    }
+
     .header {
         position: absolute;
         height: 55px;
         background-color: #25303100;
         right: 25px;
     }
-
+    
     .menu {
         display: none;
     }
@@ -925,9 +929,9 @@ body::-webkit-scrollbar-corner {
     .header.on {
         position: absolute;
         top: 0;
-        left: 0;
+        right: 0;
 
-        width: 100vw;
+        width: 30vw;
         height: 100vh;
         z-index: 10;
         background-color: #253031;
@@ -947,11 +951,24 @@ body::-webkit-scrollbar-corner {
     .header.on .menu {
         display: flex;
         flex-direction: column;
-        height: 100vh;
+        height: 40vh;
     }
 
     .header.on .menu .menu-item{
         padding: 10px 0;
+    }
+
+    .menuDropdown {
+        position: absolute;
+        top: 13vh;
+        right: 30vw;
+        background-color: rgba(37, 48, 49, 0.85);
+        border-radius: 5px 0 0 5px;
+        box-shadow: 1px 1px 5px #253031;
+    }
+    
+    .menuDropdown a {
+        line-height: 40px;
     }
 
     /* Apresentação */
@@ -1019,6 +1036,14 @@ body::-webkit-scrollbar-corner {
 }
 
 @media screen and (max-width: 425px) {
+
+    .header.on {
+        width: 40vw;
+    }
+
+    .menuDropdown {
+        right: 40vw;
+    }
 
     /* Apresentação */
 
