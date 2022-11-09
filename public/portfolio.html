@@ -18,18 +18,27 @@
 </head>
 <body>
   <main>
-    <section class="section-gallery">
+    <nav class="sideNavbar">
+      <h3 class="sideNavbar-title">Acesso Rápido</h3>
+      <ul>
+          <a href="#section-gallery"><li><img class="sideNavbar-icons" src="assets/images/icon-gallery.svg" alt=""></li></a>
+          <a href="#tools"><li></li></a>
+          <a href="#education"><li></li></a>
+          <a href="#profession"><li></li></a>
+      </ul>
+    </nav>
+    <section class="section-gallery" id="section-gallery">
       <article class="gallery-heading">
-        <span class="gallery-heading-text">Galeria</span>
-        <div class="gallery-heading-wrapper">
+        <h2 class="gallery-heading--text">Galeria</h2>
+        <div class="gallery-heading--wrapper">
           <div class="offset">
-            <h2 class="gallery-heading-wrapper-text animate-before">Comida</h2>
+            <h2 class="gallery-heading--wrapper-text animate-before">Comida</h2>
           </div>
           <div class="offset">
-            <h2 class="gallery-heading-wrapper-text animate-before">Arte</h2>
+            <h2 class="gallery-heading--wrapper-text animate-before">Arte</h2>
           </div>
           <div class="offset">
-            <h2 class="gallery-heading-wrapper-text animate-before">Floresta</h2>
+            <h2 class="gallery-heading--wrapper-text animate-before">Floresta</h2>
           </div>
         </div>
       </article>
@@ -82,10 +91,178 @@
         </article>
       </section>
     </section>
-    <section>
-      
+    <section class="section-restaurant">
+      <h2 class="title">Restaurante</h2>
+      <article class="featuredDish">
+        <div class="featuredDish-description">
+          <h3 class="featuredDish-title">Prato em Destaque</h3>
+          <h3 class="featuredDish-plate">Sabores <span>Mediterrâneos</span></h3>
+          <p>Uma deliciosa entrada para desfrutar o frescor e a intensidade desses sabores mediterrâneos.</p>
+          
+          <button class="reservation" id="calendar">
+            <i class="fa-solid fa-calendar-days"></i>
+            <h3>Faça uma reserva</h3>
+          </button>
+            <dialog class="modal-calendar">
+              <div class="calendar-header">
+                <div id="monthDisplay"></div>
+
+                <div>
+                  <button id="backButton">Voltar</button>
+                  <button id="nextButton">Próximo</button>
+                </div>
+              </div>
+
+              <div id="weekdays">
+                <div>Domingo</div>
+                <div>Segunda-feira</div>
+                <div>Terça-feira</div>
+                <div>Quarta-feira</div>
+                <div>Quinta-feira</div>
+                <div>Sexta-feira</div>
+                <div>Sábado</div>
+              </div>
+
+              <!-- div dinamic -->
+              <div id="calendar-days" ></div>
+              
+            </dialog>  
+        </div>
+        <img src="assets/images/brooke-lark-1Rm9GLHV0UA-unsplash.png" alt="">
+      </article>
+      <div id="cards">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-image">
+              <i class="fa-duotone fa-apartment"></i>
+            </div>
+            <div class="card-info-wrapper">
+              <div class="card-info">
+                <i class="fa-duotone fa-apartment"></i>
+                <div class="card-info-title">
+                  <h3>Entradas</h3>  
+                  <h4>Comece leve ou intrigado</h4>
+                </div>    
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-image">
+              
+            </div>
+            <div class="card-info-wrapper">
+              <div class="card-info">
+                <i class="fa-duotone fa-unicorn"></i>
+                <div class="card-info-title">
+                  <h3>Sopas</h3>  
+                  <h4>Caldos que criam lembranças</h4>
+                </div>    
+              </div>  
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-image">
+              <i class="fa-duotone fa-blender-phone"></i>
+            </div>
+            <div class="card-info-wrapper">
+              <div class="card-info">
+                <i class="fa-duotone fa-blender-phone"></i>
+                <div class="card-info-title">
+                  <h3>Blender Phones</h3>  
+                  <h4>These absolutely deserve to exist.</h4>
+                </div>    
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-image">
+              <i class="fa-duotone fa-person-to-portal"></i>
+            </div>
+            <div class="card-info-wrapper">
+              <div class="card-info">
+                <i class="fa-duotone fa-person-to-portal"></i>
+                <div class="card-info-title">
+                  <h3>Adios</h3>  
+                  <h4>See you...</h4>
+                </div>    
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-image">
+              <i class="fa-duotone fa-person-from-portal"></i>
+            </div>
+            <div class="card-info-wrapper">
+              <div class="card-info">
+                <i class="fa-duotone fa-person-from-portal"></i>
+                <div class="card-info-title">
+                  <h3>I mean hello</h3>  
+                  <h4>...over here.</h4>
+                </div>    
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-image">
+              <i class="fa-duotone fa-otter"></i>
+            </div>
+            <div class="card-info-wrapper">
+              <div class="card-info">
+                <i class="fa-duotone fa-otter"></i>
+                <div class="card-info-title">
+                  <h3>Otters</h3>  
+                  <h4>Look at me, imma cute lil fella.</h4>
+                </div>    
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-music" id="section-music">
+      <article class="podcast-container">
+        <h2 class="section-music--title">Podcasts</h2>
+
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/4UW7PAEqWh5ScaFogQ4HIj?utm_source=generator" width="40%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </article>
+    </section>
+    <section class="news-portal">
+      <h2 class="title">Notícias</h2>
+      <div class="main-news-cover">
+        <img class="main-news-cover-img" src="https://images.unsplash.com/photo-1557992260-ec58e38d363c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="Homem segurando jornal pegando fogo">
+      </div>
+      <div class="container-news">
+        <div class="news">
+          <h3 class="news-title">COVID-18</h3>
+          <p class="news-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="progress-bar"></div>
+        </div>
+        <div class="news">
+          <h3 class="news-title">COVID-19</h3>
+          <p class="news-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="progress-bar"></div>
+        </div>
+        <div class="news">
+          <h3 class="news-title">COVID-19</h3>
+          <p class="news-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="progress-bar"></div>
+      </div>
     </section>
   </main>
   <script src="assets/js/gallery.js"></script>
+  <script src="assets/js/restaurant.js"></script>
+  <script src="assets/js/music.js"></script>
+  <script src="assets/js/news.js"></script>
+ 
 </body>
 </html>

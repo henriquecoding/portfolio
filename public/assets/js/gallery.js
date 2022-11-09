@@ -1,5 +1,5 @@
 const gallery = document.querySelectorAll('.gallery')
-const headings = document.querySelectorAll('.gallery-heading-wrapper-text')
+const headings = document.querySelectorAll('.gallery-heading--wrapper-text')
 
 function enterScreen(index) {
   const grid = gallery[index]
