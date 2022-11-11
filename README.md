@@ -1,2 +1,3 @@
-# portfolio
- Criação do meu primeiro Portifólio
+# Portfolio
+ 
+ * Status: Em desenvolvimento
