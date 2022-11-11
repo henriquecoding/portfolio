@@ -49,11 +49,13 @@ body::-webkit-scrollbar-corner {
   flex-direction: column;
 }
 
-.informations-websiteType, .numberOfWeeks {
+.informations {
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
 }
 
 .informations-titles {
@@ -63,12 +65,14 @@ body::-webkit-scrollbar-corner {
 }
 
 .informations-box {
-  width: 200px;
+  width: 150px;
   height: 40px;
   background-color: rgba(240, 248, 255, 0.7);
   border-radius: 5px;
   box-shadow: 0 0 5px #253031;
   margin-left: 30px;
+  font: 500 1rem "Ubuntu", sans-serif;
+  color: #253031;
 }
 
 .finalPrice {
