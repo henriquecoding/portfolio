@@ -467,6 +467,157 @@ main {
   }
 }
 
+// Seção do Formulário
+
+.container-budgetForm {
+  display: grid;
+  grid-template-areas: 'title title'
+                       'informations form';
+  margin: 0 auto;
+  width: 100%;
+  max-width: 980px;
+}
+
+.budget-title {
+  font: 700 2rem 'Ubuntu', sans-serif;
+  grid-area: title;
+}
+
+.budget-informations {
+  grid-area: informations;
+  flex-direction: column;
+}
+
+.informations {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.informations-titles {
+  font: 600 1.5rem 'Ubuntu', sans-serif;
+  color: $blue;
+  text-shadow: 0 0 3px $black;
+}
+
+.informations-box {
+  width: 150px;
+  height: 40px;
+  background-color: rgba(240, 248, 255, 0.7);
+  border-radius: 5px;
+  box-shadow: 0 0 5px $black;
+  margin-left: 30px;
+  font: $normal-font;
+  color: $black;
+}
+
+.finalPrice {
+  display: flex;
+  background-color: $blue;
+  width: 20%;
+  height: 40%;
+}
+
+.budgetForm {
+  grid-area: form;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(240, 248, 255, 0.7);
+  border-radius: 5px;
+  box-shadow: 0 0 5px $black;
+}
+
+.form-titles {
+  font: 600 1.5rem 'Ubuntu', sans-serif;
+  margin-bottom: 20px;
+}
+
+.containers-form, .selectNumberOfPages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font: $normal-font;
+}
+
+.websiteType {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.websites, .onlineStores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  background-color: $white;
+  border-radius: 5px;
+  box-shadow: 0 0 4px $black;
+  transition: .3s ease;
+  font: $normal-font;
+
+  &:hover {
+    box-shadow: inset 0 0 4px $black;
+  }
+
+  img {
+    width: 60%;
+  }
+}
+
+.selectNumberOfPages {
+  gap: 10px;
+}
+
+.pageOptions-title {
+  font: 600 1rem 'Ubuntu', sans-serif;
+  margin-bottom: 10px;
+}
+
+.pageOptions {
+  font: $normal-font;
+  margin-bottom: 15px;
+}
+
+#mensage {
+  width: 80%;
+  height: 100px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.container-btn {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.form-btn {
+  width: 30%;
+  height: 40px;
+  font: 500 1.5rem "Ubuntu", sans-serif;
+  border-radius: 5px;
+  background-color: $blue;
+  transition: .3s ease;
+  box-shadow: 0 0 2px $black;
+}
+
+.form-btn:hover {
+  background-color: $dark-blue;
+  color: $white;
+  border: 1px solid $white;
+}
+
 // Seção de Música
 
 .section-music {
