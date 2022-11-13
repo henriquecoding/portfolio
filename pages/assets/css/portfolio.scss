@@ -474,7 +474,7 @@ main {
   grid-template-areas: 'title title'
                        'informations form';
   margin: 0 auto;
-  width: 100%;
+  width: 90%;
   max-width: 980px;
 }
 
@@ -509,7 +509,7 @@ main {
   background-color: rgba(240, 248, 255, 0.7);
   border-radius: 5px;
   box-shadow: 0 0 5px $black;
-  margin-left: 30px;
+  margin: 30px;
   font: $normal-font;
   color: $black;
 }
@@ -542,6 +542,44 @@ main {
   font: $normal-font;
 }
 
+// Estilização do checkbox
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.switch {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 60px;
+  height: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+
+.slider {
+  position: absolute;
+  background-color: $white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  transition: all .5s ease-in-out;
+}
+
+input:checked[type="checkbox"] ~ .switch {
+  background-color: $brown;
+}
+
+input:checked[type="checkbox"] ~ .switch .slider {
+  transform: translateX(40px);
+}
+
+/////////
+
 .websiteType {
   display: flex;
   flex-direction: row;
@@ -556,8 +594,8 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 200px;
-  height: 200px;
+  width: 40%;
+  height: 170px;
   background-color: $white;
   border-radius: 5px;
   box-shadow: 0 0 4px $black;
