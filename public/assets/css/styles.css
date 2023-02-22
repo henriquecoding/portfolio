@@ -91,9 +91,9 @@ header {
 }
 
 .nav-links a {
+  text-align: center;
   color: var(--color-white);
   text-decoration: none;
-  letter-spacing: 3px;
   font-weight: bold;
   font-size: 1rem;
   transition: .7 ease;
