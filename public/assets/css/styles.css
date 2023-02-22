@@ -345,7 +345,7 @@ header {
   align-items: center;
 }
 
-#stamp {
+.stamp {
   width: 80px;
 }
 .header-lastConquest {
