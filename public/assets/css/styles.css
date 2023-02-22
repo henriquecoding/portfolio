@@ -100,7 +100,6 @@ header {
 }
 
 .nav-links a:hover {
-  font-size: 1.2rem;
   color: var(--color-dark-blue);
 }
 
@@ -416,10 +415,10 @@ header {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  height: 400px;
+  height: 300px;
   flex-wrap: wrap;
   gap: 15px;
-  padding: 40px 30px;
+  padding: 60px 30px;
 }
 
 .conquest {
@@ -461,13 +460,13 @@ header {
 #prev, 
 #next {
   position: absolute;
-  top:80%;
-  transform: translateY(0%);
+  top:10%;
+  left: 30%;
   color: var(--color-white);
   background: var(--color-dark-blue);
-  height: 50px;
-  width: 50px;
-  line-height: 50px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
   font-size: 25px;
   text-align: center;
   cursor: pointer;
@@ -481,11 +480,11 @@ header {
   background: var(--color-blue);
 }
 #prev{
-  left: 30px;
+  left: 20px;
 }
 
 #next{
-  right: 30px;
+  right: 20px;
 }
 
 #closeModal-btn {
