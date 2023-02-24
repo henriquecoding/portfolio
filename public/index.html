@@ -16,56 +16,44 @@
     <script src="https://kit.fontawesome.com/f38edd0efe.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <input type="checkbox" name="" id="check">
-      
-      <section class="logo-container">
-        <img src="assets/images/logo-HenriquePassos.png" alt="Logo do Henrique Passos" class="logo-henrique">
-      </section>
-
-      <section class="nav-btn">
-        <div class="nav-links">
-          <ul>
-            <li class="nav-link">
-              <a href="#">Home<i class="fas fa-caret-down"></i></a>
-              <div class="dropdown">
-                <ul>
-                  <li class="dropdown-link">
-                    <a href="#section-presentation">Apresentação</a>
-                  </li>
-                  <li class="dropdown-link">
-                    <a href="#section-gallery">Projetos</a>
-                  </li>
-                  <li class="dropdown-link">
-                    <a href="#section-conquests">Conquistas</a>
-                  </li>
-                  <li class="dropdown-link">
-                    <a href="#section-profession">Experiência Profissional</a>
-                  </li>
-                  <li class="dropdown-link">
-                    <a href="#section-education">Educação</a>
-                  </li>
-                </ul>
-              </div>
-            <li class="nav-link">
-              <a href="about.html">Sobre mim</a>
+  <header class="header">
+    <div class="container">
+      <div class="header-main">
+        <div class="logo">
+          <a href="index.html"><img src="assets/images/logo-HenriquePassos.png" alt="Logo do Henrique Passos"></a>
+        </div>
+        <div class="open-nav-menu">
+          <span></span>
+        </div>
+        <div class="menu-overlay">
+        </div>
+        <nav class="nav-menu">
+          <div class="close-nav-menu">
+            <i class="fa-regular fa-circle-xmark"></i>
+          </div>
+          <ul class="menu">
+            <li class="menu-item menu-item-has-children">
+              <a href="index.html" data-toggle="sub-menu">Home <i class="plus"></i></a>
+              <ul class="sub-menu">
+                <li class="menu-item"><a href="#presentation-section">Apresentação</a></li>
+                <li class="menu-item"><a href="#gallery-section">Projetos</a></li>
+                <li class="menu-item"><a href="#conquests-section">Conquistas</a></li>
+                <li class="menu-item"><a href="#profession-section">Experiência Profissional</a></li>
+                <li class="menu-item"><a href="#education-section">Educação</a></li>
+              </ul>
             </li>
-            <li class="nav-link">
-                <a href="contacts.html">Contactos</a>
+            <li class="menu-item">
+              <a href="#">Sobre mim</a>
+            </li>
+            <li class="menu-item">
+              <a href="#">Contactos</a>
             </li>
           </ul>
-        </div>
-      </section>
-
-      <div class="hamburger-menu-container">
-        <div class="hamburger-menu">
-          <div></div>
-        </div>
+        </nav>
       </div>
-    </nav>
-  </header>
-  <section class="presentation-container" id="section-presentation">
+    </div>
+ </header>
+  <section class="presentation-container" id="presentation-section">
     <div>
       <img src="assets/images/foto - Henrique Silva.png" alt="fotografia - Henrique Silva">
       <div class="socialMedia">
@@ -106,7 +94,7 @@
     </div>
   </section>
 
-  <section class="section-gallery" id="section-gallery">
+  <section class="section-gallery" id="gallery-section">
     <article class="gallery-heading">
       <h2 class="gallery-heading--text">Projetos</h2>
       <aside class="gallery-heading--wrapper">
@@ -172,7 +160,7 @@
     </section>
   </section>
 
-  <section class="conquests" id="section-conquests">
+  <section class="conquests" id="conquests-section">
     <div class="last-conquest">
         <div class="header-lastConquest">
           <img class="stamp" src="assets/images/conquista.svg" alt="Selo de conquista" title="Selo de conquista">
@@ -243,7 +231,7 @@
     </dialog>
   </section>
 
-  <section class="section-profession" id="section-profession">
+  <section class="profession-section" id="profession-section">
     <h2 class="titles">Experiência Profissional</h2>
 
     <div class="work"  id="f1">
@@ -286,7 +274,7 @@
     <div class="verticalLine"></div>
   </section>
 
-  <section class="section-education" id="section-education">
+  <section class="education-section" id="education-section">
     <h2 class="titles">Educação</h2>
     <article id="cards">
       <div class="card">
