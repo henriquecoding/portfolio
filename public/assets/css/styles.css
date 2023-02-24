@@ -71,7 +71,7 @@ body {
   justify-content: center;
   margin: 0 auto;
 	top:0;
-	z-index: 99;
+	z-index: 999;
 	padding: 15px;
 }
 
@@ -107,7 +107,7 @@ body {
   text-decoration: none;
 	display: block;
 	padding: 12px 0;
-	font: 500 1rem 'Ubuntu', sans-serif;
+	font: 500 1.2rem 'Ubuntu', sans-serif;
 	color: var(--color-white);
 	transition: all 0.3s ease;
 }
@@ -160,6 +160,7 @@ body {
 
 .header .menu > .menu-item > .sub-menu a {
   text-decoration: none;
+  font: 500 1rem 'Ubuntu', sans-serif;
 }
 
 @media(min-width: 992px){
