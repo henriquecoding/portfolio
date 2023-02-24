@@ -26,7 +26,7 @@ textarea {
 
 .container-form {
   position: relative;
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
   min-height: 100vh;
   padding: 2rem;
@@ -106,7 +106,7 @@ form {
 }
 
 .input {
-  width: 100%;
+  width: 80%;
   outline: none;
   border: 2px solid var(--color-white);
   background: none;
@@ -114,7 +114,6 @@ form {
   color: var(--color-white);
   font-weight: 500;
   font-size: 0.95rem;
-  letter-spacing: 0.5px;
   border-radius: 25px;
   transition: 0.3s;
 }
@@ -310,7 +309,7 @@ textarea.input {
   opacity: 0.2;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 768px) {
   .form {
     grid-template-columns: 1fr;
   }
@@ -348,7 +347,7 @@ textarea.input {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 375px) {
   .container {
     padding: 1.5rem;
   }

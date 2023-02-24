@@ -65,7 +65,7 @@ body {
 
 .header {
 	position: sticky;
-	width: 100%;
+	width: 90%;
   max-width: 980px;
   display: flex;
   justify-content: center;
